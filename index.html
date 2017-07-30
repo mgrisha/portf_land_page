@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="libs\font-awesome\css\font-awesome.min.css">
+    <link rel="stylesheet" href="libs/jquery/jquery-3.2.1.min.js">
 </head>
 <body>
 
-    <header>
+    <header id="top">
         <nav>
             <div class="container">
                 <div class="row">
@@ -28,11 +29,11 @@
                     </div>
                     <div class="collapse navbar-collapse navbar-right" id="top_menu">
                         <ul class="menu">
-                            <li><a href="#">features</a></li>
-                            <li><a href="#">works</a></li>
-                            <li><a href="#">our team</a></li>
+                            <li><a href="#feat">features</a></li>
+                            <li><a href="#works">works</a></li>
+                            <li><a href="#team">our team</a></li>
                             <li><a href="#">testimonials</a></li>
-                            <li><a href="#">download</a></li>
+                            <li><a href="#reg">register</a></li>
                         </ul>
                     </div>
                 </div>
@@ -52,7 +53,7 @@
         </div>
     </header>
 
-    <section class="params_s">
+    <section class="params_s" id="feat">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-6">
@@ -101,7 +102,7 @@
         </div>
     </section>
 
-    <section class="works_s">
+    <section class="works_s" id="works">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-3 col-sm-6 p0">
@@ -196,7 +197,7 @@
         </div>
     </section>
 
-    <section class="team_s">
+    <section class="team_s" id="team">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-6">
@@ -279,13 +280,13 @@
         </div>
     </section>
 
-    <section>
+    <section id="reg">
         <div class="register">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3">
                         <div class="register_block">
-                            <h5>Are you ready to start? Download for free!</h5>
+                            <h5>Are you ready to start? Register now!</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur.</p>
                             <button class="my_btn btn_lg" data-toggle="modal" data-target="#regModal">register now</button>
                         </div>
@@ -342,6 +343,9 @@
         <button class="call_btn" title="Позвоните нам!" data-toggle="modal" data-target="#telModal">
             <span class="glyphicon glyphicon-earphone"></span>
         </button>
+        <a href="#top" id="up_btn">
+            <i class="fa fa-chevron-up fa-3x"></i>
+        </a>
     </footer>
 
     <div class="modal fade" id="regModal">
@@ -372,7 +376,7 @@
                 <div class="modal-body">
                     <form action="#" id="regForm">
                         <label>tel: +380 99 123 45 67</label>
-                        <button class="my_btn btn_md btn-block" onclick="self.close">close</button>
+                        <button class="my_btn btn_md btn-block" data-dismiss="modal" aria-hidden="true">close</button>
                     </form>
                 </div>
             </div>

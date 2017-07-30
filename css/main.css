@@ -46,6 +46,15 @@ body {
     border: none;
     z-index: 999;
 }
+#up_btn {
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+
+    border: none;
+    z-index: 999;
+}
+
 .p0 {
     padding: 0px;
 }
@@ -223,3 +232,10 @@ nav {
 #regForm input {
     margin-bottom: 15px;
 }
+
+  a[id='up_btn'] i:hover {
+    color: #e84545;
+}
+/* a[id='up_btn'] {
+    color: #e84545;
+} */
